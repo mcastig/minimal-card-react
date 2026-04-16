@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #f5f4f1;
+  --color-card: #ffffff;
+  --color-image-bg: #f8eaed;
+  --color-tag-bg: #ede8f8;
+  --color-tag-text: #7357c8;
+  --color-title: #1b1a28;
+  --color-body: #6f6e80;
+  --color-divider: #ebebf0;
+  --color-author: #394150;
+
+  --font-base: 'Sora', sans-serif;
+
+  /* Typography scale */
+  --text-title:      1.125rem; /* 18px */
+  --text-body:       0.875rem; /* 14px */
+  --text-small:      0.75rem;  /* 12px */
+  --text-tag:        0.625rem; /* 10px */
+
+  --radius-card: 20px;
+  --radius-image: 12px;
+  --radius-tag: 999px;
+
+  --shadow-card: 0 4px 24px rgba(27, 26, 40, 0.07), 0 1px 4px rgba(27, 26, 40, 0.04);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
