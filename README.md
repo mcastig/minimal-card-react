@@ -2,6 +2,8 @@
 
 A minimal, production-quality blog card component built with React, TypeScript, and Vite. Focuses on clean typography, subtle animation, and a well-structured component model.
 
+**Live:** https://mcastig.github.io/minimal-card-react/
+
 ---
 
 ## Overview
