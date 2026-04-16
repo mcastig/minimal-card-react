@@ -57,6 +57,20 @@ interface CardProps {
 }
 ```
 
+## Deployment
+
+Hosted on GitHub Pages at **https://mcastig.github.io/minimal-card-react/**
+
+- CI/CD via `.github/workflows/deploy.yml` (GitHub Actions)
+- Triggers automatically on push to `main`, or manually via `workflow_dispatch`
+- Build output (`dist/`) is uploaded as a Pages artifact and deployed in a separate job
+- `vite.config.ts` sets `base: '/minimal-card-react/'` for correct asset paths on the subdirectory URL
+
+To trigger a manual deploy:
+```bash
+gh workflow run deploy.yml
+```
+
 ## Stack
 
 React 19, TypeScript 6, Vite 8, ESLint 9 with `typescript-eslint` and `eslint-plugin-react-hooks`, Vitest 4, React Testing Library 16.
